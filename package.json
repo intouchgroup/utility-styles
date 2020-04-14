@@ -1,0 +1,26 @@
+{
+	"name": "@intouchgroup/utility-styles",
+	"version": "0.0.1",
+	"description": "Utility-first SCSS classes",
+	"main": "bundle.js",
+	"scripts": {
+		"start": "npm run dev",
+		"dev": "npm run serve",
+		"clean": "rimraf ./dist/",
+		"build": "npm run clean && webpack",
+		"build:prod": "npm run clean && webpack --prod",
+		"serve": "webpack-dev-server --open"
+	},
+	"keywords": [
+        "utility",
+        "styles",
+        "classes",
+        "scss",
+        "sass"
+    ],
+	"author": "Intouch Group",
+	"license": "MIT",
+	"devDependencies": {
+		"@intouchgroup/es2020-boilerplate": "^0.9.0"
+	}
+}

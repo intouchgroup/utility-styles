@@ -1,0 +1,72 @@
+@use 'media';
+
+@include media.variants((
+	'text-bold': (font-weight: 600),
+	'text-underline': (text-decoration: underline),
+	'text-uppercase': (text-transform: uppercase),
+	'text-lowercase': (text-transform: lowercase),
+	'text-left': (text-align: left),
+	'text-right': (text-align: right),
+	'text-center': (text-align: center),
+	'text-justify': (text-align: justify),
+));
+
+@mixin bold { font-weight: 600; }
+
+@mixin underline { text-decoration: underline; }
+
+@mixin uppercase { text-transform: uppercase; }
+
+@mixin lowercase { text-transform: lowercase; }
+
+@mixin left { text-align: left; }
+
+@mixin right { text-align: right; }
+
+@mixin center { text-align: center; }
+
+@mixin justify { text-align: justify; }
+
+@mixin small { font-size: 12px; line-height: 1.333332; }
+
+.text-small { @include small; }
+
+@mixin medium { font-size: 16px; line-height: 1.333332; }
+
+.text-medium { @include medium; }
+
+@mixin large {
+	font-size: 24px;
+	line-height: 1.4;
+
+	@include media.small {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+}
+
+.text-large { @include large; }
+
+@mixin xlarge {
+	font-size: 32px;
+	line-height: 1.2;
+
+	@include media.small {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+}
+
+.text-xlarge { @include xlarge; }
+
+@mixin xxlarge {
+	font-size: 40px;
+	line-height: 1.2;
+
+	@include media.small {
+		font-size: 28px;
+		line-height: 1.2;
+	}
+}
+
+.text-xxlarge { @include xxlarge; }
