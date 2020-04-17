@@ -1,6 +1,6 @@
 {
 	"name": "@intouchgroup/utility-styles",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Utility-first SCSS classes",
 	"main": "bundle.js",
 	"scripts": {
