@@ -1,15 +1,11 @@
 @use 'media';
 
-$black: #111;
-$grey: #999;
-$white: #fafafa;
-
 $colors: (
-	'black': $black,
-	'grey': $grey,
-	'white': $white,
+	'black': #111,
+	'grey': #999,
+	'white': #fafafa,
 	'transparent': transparent,
-);
+) !default;
 
 @each $name, $hex in $colors {
 	@include media.variants((

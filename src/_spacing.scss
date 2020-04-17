@@ -1,8 +1,10 @@
 @use 'media';
 
+$spacing: 0.5 !default;
+
 @for $i from 0 through 6 {
-	$key: 5 * $i;
-	$value: #{0.5 * $i}em;
+	$key: 10 * $spacing * $i;
+	$value: #{$spacing * $i}em;
 
 	@include media.variants((
 		'm-#{$key}': (margin: $value $value),
