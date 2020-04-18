@@ -16,19 +16,19 @@
 ```scss
 @use '~@intouchgroup/utility-styles' with (
     // media breakpoints
-    breakpoints: (
+    $breakpoints: (
         small: 480,
         medium: 896,
         large: 1200,
         xlarge: 1920,
     ),
     // brand colors
-    colors: (
+    $colors: (
         'blue': #1cb2a9,
         'green': #b2d236,
         'green-light': #a0ce4e,
     ),
     // em-based increments for margin and padding
-    spacing: 0.75,
+    $spacing: 0.75,
 );
 ```<br><br>
