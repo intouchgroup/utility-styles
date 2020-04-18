@@ -1,8 +1,8 @@
 {
 	"name": "@intouchgroup/utility-styles",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Utility-first SCSS classes",
-	"main": "./src/styles.scss",
+	"main": "index.scss",
 	"scripts": {
 		"start": "npm run dev",
 		"dev": "npm run serve",
