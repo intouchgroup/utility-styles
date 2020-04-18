@@ -1,11 +1,27 @@
 @charset "UTF-8";
 
-@forward 'media';
-@forward 'color';
-@forward 'text';
-@forward 'display';
-@forward 'float';
-@forward 'position';
-@forward 'spacing';
-@forward 'size';
-@forward 'flex';
+$breakpoints: (
+	small: 640,
+	medium: 768,
+	large: 1024,
+	xlarge: 1280,
+) !default;
+
+$colors: (
+	'black': #111,
+	'grey': #999,
+	'white': #fafafa,
+	'transparent': transparent,
+) !default;
+
+$spacing: 0.5 !default;
+
+@use 'media' with ($breakpoints: $breakpoints);
+@use 'color' with ($colors: $colors);
+@use 'text';
+@use 'display';
+@use 'float';
+@use 'position';
+@use 'spacing' with ($spacing: $spacing);
+@use 'size';
+@use 'flex';
