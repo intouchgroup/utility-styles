@@ -16,6 +16,7 @@ $colors: (
 
 $spacing: 0.5 !default;
 
+@use 'utility';
 @use 'media' with ($breakpoints: $breakpoints);
 @use 'color' with ($colors: $colors);
 @use 'text';

@@ -1,6 +1,6 @@
 {
 	"name": "@intouchgroup/utility-styles",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Utility-first SCSS classes",
 	"main": "index.scss",
 	"scripts": {
@@ -21,6 +21,6 @@
 	"author": "Intouch Group",
 	"license": "MIT",
 	"devDependencies": {
-		"@intouchgroup/es2020-boilerplate": "^0.9.0"
+		"@intouchgroup/es2020-boilerplate": "^0.14.0"
 	}
 }
