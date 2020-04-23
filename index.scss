@@ -1,25 +1,14 @@
-@charset "UTF-8";
+@use 'defaults';
 
-$breakpoints: (
-	small: 640,
-	medium: 768,
-	large: 1024,
-	xlarge: 1280,
-) !default;
-
-$colors: (
-	'black': #111,
-	'grey': #999,
-	'white': #fafafa,
-	'transparent': transparent,
-) !default;
-
-$spacing: 0.5 !default;
+$breakpoints: defaults.$breakpoints !default;
+$colors: defaults.$colors !default;
+$text-sizes: defaults.$text-sizes !default;
+$spacing: defaults.$spacing !default;
 
 @use 'utility';
 @use 'media' with ($breakpoints: $breakpoints);
 @use 'color' with ($colors: $colors);
-@use 'text';
+@use 'text' with ($text-sizes: $text-sizes);
 @use 'display';
 @use 'float';
 @use 'position';

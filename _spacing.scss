@@ -1,6 +1,7 @@
+@use 'defaults';
 @use 'media';
 
-$spacing: 0.5 !default;
+$spacing: defaults.$spacing !default;
 
 @for $i from 0 through 6 {
 	$key: 10 * $spacing * $i;

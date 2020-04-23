@@ -1,27 +1,9 @@
 @use 'sass:map';
+@use 'defaults';
 @use 'media';
 @use 'utility';
 
-$text-sizes: (
-	small: (
-		base: (font-size: 12px, line-height: 1.333332),
-	),
-	medium: (
-		base: (font-size: 16px, line-height: 1.333332)
-	),
-	large: (
-		base: (font-size: 20px, line-height: 1.4),
-		md: (font-size: 24px, line-height: 1.4),
-	),
-	xlarge: (
-		base: (font-size: 24px, line-height: 1.2),
-		md: (font-size: 32px, line-height: 1.2),
-	),
-	xxlarge: (
-		base: (font-size: 28px, line-height: 1.2),
-		md: (font-size: 40px, line-height: 1.2),
-	),
-) !default;
+$text-sizes: defaults.$text-sizes !default;
 
 @mixin _text-style ($size) {
 	$breakpoint-map: map.get($text-sizes, $size);

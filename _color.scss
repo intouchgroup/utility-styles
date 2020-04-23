@@ -1,8 +1,7 @@
+@use 'defaults';
 @use 'media';
 
-$colors: (
-	'transparent': transparent,
-) !default;
+$colors: defaults.$colors !default;
 
 @each $name, $hex in $colors {
 	@include media.variants((
