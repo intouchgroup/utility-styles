@@ -22,6 +22,8 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 	@include media.xlarge { @include utility.destructure(map.get($breakpoint-map, 'xl')); }
 }
 
+@mixin xxsmall () { @include _text-style(xxsmall); }
+
 @mixin xsmall () { @include _text-style(xsmall); }
 
 @mixin small () { @include _text-style(small); }
@@ -44,6 +46,7 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 	.xl-#{$class-name} { @include media.xlarge { @include _text-style($size); } }
 }
 
+@include _text-variants(xxsmall);
 @include _text-variants(xsmall);
 @include _text-variants(small);
 @include _text-variants(medium);
