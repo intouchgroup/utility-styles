@@ -3,7 +3,8 @@
 @use 'media';
 @use 'utility';
 
-$text-sizes: defaults.$text-sizes !default;
+$text-sizes: () !default;
+$text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 
 @mixin _text-style ($size) {
 	$breakpoint-map: map.get($text-sizes, $size);

@@ -1,7 +1,9 @@
+@use 'sass:map';
 @use 'defaults';
 @use 'media';
 
-$colors: defaults.$colors !default;
+$colors: () !default;
+$colors: map.merge(defaults.$colors, $colors);
 
 @each $name, $hex in $colors {
 	@include media.variants((

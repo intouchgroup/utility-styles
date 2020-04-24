@@ -2,7 +2,8 @@
 @use 'defaults';
 @use 'utility';
 
-$breakpoints: defaults.$breakpoints !default;
+$breakpoints: () !default;
+$breakpoints: map.merge(defaults.$breakpoints, $breakpoints);
 
 $xsmall: map.get($breakpoints, small) - 1;
 $small: map.get($breakpoints, small);
