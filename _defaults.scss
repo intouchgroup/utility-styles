@@ -6,9 +6,9 @@ $breakpoints: (
 );
 
 $colors: (
-	'black': #111,
-	'grey': #aaa,
-	'white': #fafafa,
+	'black': #000,
+	'grey': #ccc,
+	'white': #fff,
 	'transparent': transparent,
 );
 
@@ -17,7 +17,7 @@ $text-sizes: (
 		base: (font-size: 12px, line-height: 1.333332),
 	),
 	medium: (
-		base: (font-size: 16px, line-height: 1.333332)
+		base: (font-size: 16px, line-height: 1.333332),
 	),
 	large: (
 		base: (font-size: 20px, line-height: 1.4),
