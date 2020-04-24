@@ -1,6 +1,6 @@
 {
 	"name": "@intouchgroup/utility-styles",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"description": "Utility-first SCSS classes",
 	"main": "index.scss",
 	"scripts": {

@@ -15,6 +15,9 @@ $colors: (
 );
 
 $text-sizes: (
+	xsmall: (
+		base: (font-size: 10px, line-height: 1.333332),
+	),
 	small: (
 		base: (font-size: 12px, line-height: 1.333332),
 	),
