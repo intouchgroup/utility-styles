@@ -22,19 +22,19 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 	@include media.xlarge { @include utility.destructure(map.get($breakpoint-map, 'xl')); }
 }
 
-%xxsmall { @include _text-style(xxsmall); }
+@mixin xxsmall () { @include _text-style(xxsmall); }
 
-%xsmall { @include _text-style(xsmall); }
+@mixin xsmall () { @include _text-style(xsmall); }
 
-%small { @include _text-style(small); }
+@mixin small () { @include _text-style(small); }
 
-%medium { @include _text-style(medium); }
+@mixin medium () { @include _text-style(medium); }
 
-%large { @include _text-style(large); }
+@mixin large () { @include _text-style(large); }
 
-%xlarge { @include _text-style(xlarge); }
+@mixin xlarge () { @include _text-style(xlarge); }
 
-%xxlarge { @include _text-style(xxlarge); }
+@mixin xxlarge () { @include _text-style(xxlarge); }
 
 @mixin _text-variants ($size) {
 	$class-name: text-#{$size};
