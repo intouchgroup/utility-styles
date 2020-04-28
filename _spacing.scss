@@ -3,7 +3,7 @@
 
 $spacing: defaults.$spacing !default;
 
-@for $i from 0 through 6 {
+@for $i from 0 through 12 {
 	$key: 10 * $spacing * $i;
 	$value: #{$spacing * $i}em;
 
