@@ -22,6 +22,8 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 	@include media.xlarge { @include utility.destructure(map.get($breakpoint-map, 'xl')); }
 }
 
+@mixin xxxsmall () { @include _text-style(xxxsmall); }
+
 @mixin xxsmall () { @include _text-style(xxsmall); }
 
 @mixin xsmall () { @include _text-style(xsmall); }
@@ -36,6 +38,9 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 
 @mixin xxlarge () { @include _text-style(xxlarge); }
 
+@mixin xxxlarge () { @include _text-style(xxxlarge); }
+
+
 @mixin _text-variants ($size) {
 	$class-name: text-#{$size};
 	.#{$class-name} { @include _text-style($size); }
@@ -46,6 +51,7 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 	.xl-#{$class-name} { @include media.xlarge { @include _text-style($size); } }
 }
 
+@include _text-variants(xxxsmall);
 @include _text-variants(xxsmall);
 @include _text-variants(xsmall);
 @include _text-variants(small);
@@ -53,6 +59,7 @@ $text-sizes: map.merge(defaults.$text-sizes, $text-sizes);
 @include _text-variants(large);
 @include _text-variants(xlarge);
 @include _text-variants(xxlarge);
+@include _text-variants(xxxlarge);
 @include media.variants((
 	'text-underline': (text-decoration: underline),
 	'text-uppercase': (text-transform: uppercase),

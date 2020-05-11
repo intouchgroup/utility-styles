@@ -15,8 +15,11 @@ $colors: (
 );
 
 $text-sizes: (
-	xxsmall: (
+	xxxsmall: (
 		base: (font-size: 6px, line-height: 1.333332),
+	),
+	xxsmall: (
+		base: (font-size: 8px, line-height: 1.333332),
 	),
 	xsmall: (
 		base: (font-size: 10px, line-height: 1.333332),
@@ -38,6 +41,10 @@ $text-sizes: (
 	xxlarge: (
 		base: (font-size: 28px, line-height: 1.2),
 		md: (font-size: 40px, line-height: 1.2),
+	),
+	xxxlarge: (
+		base: (font-size: 32px, line-height: 1.2),
+		md: (font-size: 55px, line-height: 1.2),
 	),
 );
 
