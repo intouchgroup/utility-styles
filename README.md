@@ -10,7 +10,8 @@
 2. Use the module in your SCSS:<br>
 ```scss
 @use '~@intouchgroup/utility-styles';
-```<br><br>
+```
+<br>
 
 3. Optionally configure the module:<br>
 ```scss
@@ -31,4 +32,5 @@
     // em-based increments for margin and padding
     $spacing: 0.75,
 );
-```<br><br>
+```
+<br>
